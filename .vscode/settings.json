@@ -1,0 +1,22 @@
+{
+    "tailwindCSS.classAttributes": [
+        "active-class",
+        "inactive-class"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.nuxt": true,
+        "**/.output": true
+    },
+    "files.associations": {
+        "*.page-template": "vue",
+        "*.layout-template": "vue",
+        "*.vue": "vue",
+        "*.md": "mdc"
+    }
+}
