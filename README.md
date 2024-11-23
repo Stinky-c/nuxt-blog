@@ -1,75 +1,21 @@
-# Nuxt UI Minimal Starter
+# Nuxt-blog
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+New blog website using Nuxt deployed to github pages. Uses Nuxt to enable creating interactive blogs using Nuxt Content.
 
-## Setup
+## Tech Stack
 
-Make sure to install the dependencies:
+- Nuxt
+    - Nuxt UI
+    - Nuxt Content
+- GitHub Pages
 
-```bash
-# npm
-npm install
+## TODO
 
-# pnpm
-pnpm install
+- [ ] Create a better formated blog page
+- [ ] Create a home page
+- [ ] Create a index page of blog to search content
+- [ ] Deploy to github pages
 
-# yarn
-yarn install
+## Deploy guide
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Deploy to [Github Pages](https://nuxt.com/deploy/github-pages)
