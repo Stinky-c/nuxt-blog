@@ -5,19 +5,18 @@
         <UHorizontalNavigation
           :links="links"
           class="border-b border-gray-200 dark:border-gray-800"
-        />
+        >
+        <template #default="{ link }">
+            <ThemeButton v-if="link.label === 'Theme-button'" />
+        </template>
+      </UHorizontalNavigation>
       </UContainer>
     </ColorScheme>
   </div>
 </template>
-
 <script lang="ts" setup>
 const colorMode = useColorMode();
-enum ColorIcon {
-  system = "i-mdi-cogs",
-  dark = "i-mdi-moon-waning-crescent",
-  light = "i-mdi-white-balance-sunny",
-}
+
 const links = [
   [
     {
@@ -42,13 +41,9 @@ const links = [
       },
     },
     {
-      icon: ColorIcon[colorMode.preference] as string,
-      label: "Theme",
+      label: "Theme-button",
       click: () => {
-        const keys = Object.keys(ColorIcon);
-        const next = (keys.indexOf(colorMode.preference) + 1) % 3;
-        colorMode.preference = keys[next];
-        console.log(`Updated color pref: ${colorMode.preference}`);
+        colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
       },
     },
   ],
