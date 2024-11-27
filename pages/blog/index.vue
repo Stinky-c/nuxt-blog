@@ -4,6 +4,8 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({ title: "Blog" });
+</script>
 
 <style></style>
